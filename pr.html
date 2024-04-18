@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        }
+
+        
+
+
+        .box {
+
+            /*background-color: gray;*/
+            height: 200px;
+            width: 350px;
+            margin-top: 30px;
+            margin-left: 20px;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+            
+        }
+
+        
+
+        .time{
+
+            font-size: 15px;
+            color: white;
+            background-color: black;
+            padding: 5px;
+            position: absolute;
+            bottom: 10px;
+            right: 14px;
+        }
+
+        .thumbnail{
+
+            width: 100%;
+        }
+
+        .channel-info{
+            /*background-color: rgba(0, 255, 255, 0.544);*/
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+        .channel-dp{
+            /*background-color: rgba(165, 42, 42, 0.662);*/
+            position: relative;
+            
+            
+        }
+        .profile-pic{
+            
+            width: 36px;
+            border-radius: 50px;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+        .channel-detail{
+            /*background-color: blueviolet;*/
+            margin-left: 10px;
+            
+            
+        }
+        .Title{
+            font-weight: 500;
+        }
+
+        .Author{
+            margin-top: 5px;
+        }
+        .views{
+            margin-top: 5px;
+        }
+        .Author, .views{
+            font-size: 15px;
+            color: rgb(138, 138, 138);
+        }
+
+        .click-grid{
+            background-color: rgb(255, 0, 0);
+            height: 80px;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+
+            
+        }
+
+        .click{
+           display: grid;
+           grid-template-columns: 30px 1fr;
+           
+            
+        }
+
+        .click-dp{
+            border-radius: 50px;
+            height: 50px;
+        }
+        .Title-two{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+           
+            
+        }
+
+        .channel-info2{
+            /*background-color: rgb(255, 157, 0);*/
+            margin-left: 30px;
+            margin-top: 5px;
+
+        }
+        .views2{
+            font-size: 12px;
+            margin-top: 4px;
+            color: rgb(174, 174, 174);
+        }
+
+        .channel-dp .click-grid{
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .channel-dp:hover .click-grid{
+            opacity: 1;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="box">
+            
+            <img class="thumbnail" src="Thumbnails/Th1.jpg" alt="">
+            <div class="time">
+                20:40
+            </div>
+        </div>
+        
+        <div class="channel-info">
+            <div class="channel-dp">
+                <img class="profile-pic" src="DP/Dp1.jpg" alt="">
+                <div class="click-grid">
+                    <div class="click">
+                        <img class="click-dp" src="DP/Dp1.jpg" alt="">
+                        <div class="channel-info2">
+                            <p class="Title-two">SuperSimpleDev</p>
+                            <p class="views2">10M Subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="channel-detail">
+                <p class="Title">HTML & CSS Full Course - Beginner to Pro</p>
+                <p class="Author">SuperSimpleDev</p>
+                <p class="views">9.4M views &#183; 2 years ago</p>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
